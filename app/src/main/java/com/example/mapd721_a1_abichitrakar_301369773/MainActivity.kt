@@ -3,6 +3,7 @@ package com.example.mapd721_a1_abichitrakar_301369773
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
@@ -113,7 +114,7 @@ fun MainScreen() {
                     }
                 }
             ) {
-                Text(text = "Clear", color = Color.White, fontSize = 18.sp)
+                Text(text = "Clear", color = Color.White, fontSize = 18.sp, )
             }
 
             Button(
@@ -134,11 +135,12 @@ fun MainScreen() {
             }
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(450.dp))
 
         Box(
             modifier = Modifier
-                .fillMaxSize()
+                .width(350.dp)
+                .padding(10.dp)
                 .border(width = 1.dp, color = Color.Black)
                 .padding(16.dp),
             contentAlignment = Alignment.BottomStart
